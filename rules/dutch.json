@@ -1,0 +1,76 @@
+{
+    "language": "Dutch",
+    "rules": {
+        "absolute": {
+            "month": "~in ((?<pronoun>deze|volgende|aankomende) maand|(?<month>januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december))~",
+            "time": "~((om )?(?<hour>\\d{1,2})\\:(?<min>\\d{2})(\\:(?<sec>\\d{2}))?)~",
+            "weekday": "~(op )?(?<pronoun>deze|aankomende|tot) (?<weekday>maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)~",
+            "date": "~((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) (?<month>januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)( (?<year>[[:digit:]]{4})( jaar)?)?~",
+            "year": "~((?<pronoun>deze|volgend|aankomend)) jaar(?!s)~u",
+            "week": "~(?<pronoun>deze|volgende|aankomende) week~u"
+        },
+        "relative": {
+            "hour": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) uur?)~u",
+            "minute": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) minuten?)~u",
+            "sec": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) seconden?)~u",
+            "year": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) jaar?)~u",
+            "week": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) weken?)~u",
+            "day": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) dagen?)~u",
+            "month": "~(over ((?<digit>[[:digit:]]+)|(?<alpha>[[:alpha:]]+)) maanden?)~u"
+        }
+    },
+    "week_days": {
+        "maandag": "monday",
+        "dinsdag": "tuesday",
+        "woensdag": "wednesday",
+        "donderdag": "thursday",
+        "vrijdag": "friday",
+        "zaterdag": "saturday",
+        "zondag": "sunday"
+    },
+    "pronouns": {
+        "deze": "next",
+        "aankomende": "next",
+        "aankomend": "next",
+        "volgende": "next",
+        "volgend": "next",
+        "tot": "next"
+    },
+    "months": {
+        "januari": "january",
+        "februari": "february",
+        "maart": "march",
+        "april": "april",
+        "mei": "may",
+        "juni": "june",
+        "juli": "july",
+        "augustus": "august",
+        "september": "september",
+        "oktober": "october",
+        "november": "november",
+        "december": "december"
+    },
+    "units": {
+        "nul": 0,
+        "een": 1,
+        "twee": 2,
+        "drie": 3,
+        "vier": 4,
+        "vijf": 5,
+        "zes": 6,
+        "zeven": 7,
+        "acht": 8,
+        "negen": 9,
+        "tien": 10,
+        "elf": 11,
+        "twaalf": 12,
+        "dertien": 13,
+        "veertien": 14,
+        "vijftien": 15,
+        "zestien": 16,
+        "zeventien": 17,
+        "achttien": 18,
+        "negentien": 19,
+        "twintig": 20
+    }
+}

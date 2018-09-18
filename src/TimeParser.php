@@ -128,7 +128,7 @@ class TimeParser {
 								case 'weekday':
 									if (!empty($matches['pronoun']) && ($pronoun = $language->translatePronoun($matches['pronoun'][0])) == 'next') {
 										$weekday = $language->translateWeekDay($matches['weekday'][0]);
-										$time = strtotime('next week '.$weekday);
+										$time = strtotime('next '.$weekday);
 										DebugStream::show('Set weekday: next '.$weekday.PHP_EOL);
 									} else {
 										$weekday = $language->translateWeekDay($matches['weekday'][0]);

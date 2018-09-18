@@ -59,6 +59,21 @@ class TimeParseTest extends PHPUnit_Framework_TestCase {
                 'in 2 weeks' => '+2 weeks',
                 'in 1 day' => '+1 day',
                 'in 10 months' => '+10 month',
+            )),
+            array('dutch', array(
+                '15 juli 1977 jaar' => '15 juli 1977',
+                'om 15:12:13' => '15:12:13',
+                'aankomende maandag' => array('date', 'next monday'),
+                'volgend jaar' => '+1 year',
+                'in februari' => 'february',
+                'over 15 uur' => '+15 hour',
+                'over 10 minuten' => '+10 minutes',
+                'over 11 seconden' => '+11 seconds',
+                'over 5 jaar' => '+5 years',
+                'tot vrijdag' => array('date', 'next friday'),
+                'over 2 weken' => '+2 weeks',
+                'over 1 dagen' => '+1 day',
+                'over 10 maanden' => '+10 month',
             ))
         );
     }
